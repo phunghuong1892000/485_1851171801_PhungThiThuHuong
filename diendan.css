@@ -1,0 +1,131 @@
+
+body span {
+    font-size: 14px;
+}
+.banner-head {
+    width: 100%;
+    position: --webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: rgb(5, 5, 5);
+}
+.banner-head .community {
+    margin-left: 210px;
+}
+.banner-head a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+}
+.banner-head a:hover {
+    color: rgba(238, 214, 170, 0.849);
+}
+.header {
+    position: relative;
+    margin-top: 5px;
+}
+.header .header-logo {
+    display: flex;
+    margin-bottom: 10px;
+}
+.header-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.header-logo h1 {
+    color: rgb(52, 132, 207);
+    padding: 5px;
+    margin: auto;
+}
+.header .header-news {
+    background: rgba(248, 248, 247, 0.925);
+    height: 50px;
+}
+.header-news a {
+    padding-left: 10px;
+    color: rgb(154, 219, 23);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.header-news span {
+    font-family: monospace;
+    padding-left: 10px;
+    background: rgba(248, 248, 247, 0.925);
+}
+/* ------end header ------*/
+
+.body .home {
+    margin-top: 7px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(241, 236, 236);
+    color: rgb(52, 132, 207);
+    padding-left: 10px;
+}
+.body .title {
+    margin-top: 7px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(241, 236, 236);
+    color: rgb(78, 76, 76);
+    padding-left: 10px;
+    padding-top: 5px;
+    background: rgba(240, 240, 240, 0.836);
+}
+.body .col-md-12 {
+    display: flex;
+    border-bottom: 0.5px solid rgb(185, 181, 181);
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.col-md-12 .col-md-6 {
+    margin: auto;
+}
+.col-md-12 .col-md-2 {
+    margin: auto;
+}
+.col-md-12{
+    width: 100%;
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+.col-md-12 a {
+    text-decoration: none;
+}
+.col-md-12 i {
+    font-size: 25px;
+    color: rgb(151, 150, 150);
+}
+.title-6 .col-end {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    border-bottom: 0.5px solid ;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.title-6 .two-icon {
+    display: flex;
+}
+.two-icon span {
+    margin-right: 20px;
+}
+/* ------end body ------*/
+
+.footer {
+    width: 100%;
+    background-color:  rgb(83, 83, 83);
+    display: flex;
+    text-align: center;
+}
+.footer span {
+    color: rgb(185, 181, 181);
+    text-align: center;
+    margin: auto;
+}
+.footer i {
+    text-align: right;
+    color: rgb(185, 181, 181);
+    margin: auto;
+    padding: 5px;
+}
+/* ------end footer ------*/
