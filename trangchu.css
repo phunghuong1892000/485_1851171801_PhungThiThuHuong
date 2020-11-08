@@ -1,0 +1,454 @@
+@media only screen and (min-width: 317px) and (max-width: 611px) {
+    .body > .container {
+        width: 100%;
+        display: inline-block;
+    }
+    .body .container .slide {
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+    }
+    .slide .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-header .container {
+    }
+    .top-header label {
+        display: none;
+    }
+    .top-header .container .search-box {
+        margin-left: 0px;
+    }
+    .input-group .input-text {
+        display: none;
+    }
+    .top-header .container .search-box .search-button {
+        width: 40px;
+    }
+    /* --- */
+    .body {
+        height: 230px;
+    }
+    .body .container {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ top-header ------*/
+.top-header {
+    background: rgb(4, 67, 122);
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    position: fixed;
+    z-index: 1000;
+}
+.top-header .container{
+    display: flex;
+    padding-top: 7px;
+    justify-content: space-between;
+}
+.top-header .container .search-box {
+    margin-left: 30px;
+    padding: 0 10px;
+}
+.search-box .input-group input {
+    font-size: 12px;
+}
+.top-header .container ul {
+    display: flex;
+    justify-content: space-between;
+}
+.top-header .container ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 7px;
+}
+.top-header .container ul li a {
+    color: white;
+    text-decoration: none;
+}
+.top-header ul li span {
+    color: white;
+}
+label > a {
+    color: white;
+    text-decoration: none;
+}
+label:hover > a {
+    color:rgb(250, 106, 70);
+    text-decoration: none;
+}
+
+/* ------ end top-header------*/
+
+
+/* ------ header ------*/
+
+.header > .container > .header-logo {
+    width: 600px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.header-logo img {
+    height: 100%;
+    background-color: cover;
+    margin-top: 50px;
+}
+nav .navbar-toggler {
+    margin-top: 50px;
+}
+nav .navbar-toggler:hover ul {
+    background-color: rgba(46, 43, 43, 0.24);
+}
+nav button {
+    font-size: 15px;
+}
+nav .collapse {
+    margin-top:50px;
+    height: 30px;
+    width: 100%;
+    border-bottom: rgb(167, 163, 163) solid 0.3px;
+    z-index: 1000;
+}
+
+#navbarTogglerDemo01 > ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+#navbarTogglerDemo01 > ul > li .nav-link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    padding: 0px 8px;
+    z-index: 1000;
+
+}
+.nav-item {
+    position: relative;
+    height: 30px;
+}
+.nav-item .nav-link {
+    color: rgb(7, 6, 6);
+    justify-content: center;
+    border-left: rgb(167, 163, 163) solid 0.3px;
+    padding-left: 10px;
+}
+.nav-item:hover {
+    transition: 0.3s;
+    display: inline-block;
+    background-color: rgb(4, 67, 122);
+    color: white;
+    padding-top: 3px;
+}
+#navbarTogglerDemo01 > ul > li:hover .nav-link  {
+    color: white;
+    transition: 0.3s;
+}
+.nav-item .nav-sub {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    width: 250px;
+    top: 30px;
+    left: 0px;
+}
+.nav-item:hover .nav-sub {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+    width: 200px;
+    z-index: 10000;
+}
+.nav-item .nav-sub ul {
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 5px;
+    position: relative;
+}
+.nav-item .nav-sub ul li {
+    background-color:rgb(4, 67, 122);
+    display: inline-block;
+    width: 200px;
+}
+.nav-item .nav-sub ul li a {
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    width: 200px;
+    text-decoration: none;
+    font-style: none;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.nav-item .nav-sub ul li:hover a {
+    color: rgb(4, 67, 122);
+    background-color: rgb(233, 227, 233);
+}
+/* ------ end header------*/
+
+
+/* ------ body------*/
+.body .container {
+    margin-top: 35px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+.body .container .slide {
+    width: 70%;
+    height: 100%;
+}
+.body .container .carousel-inner{
+    height: 100%;
+}
+.body .container .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.body .container .banner-page {
+    width: 25%;
+    height: 60%;
+    margin-right: 30px;
+}
+.banner-page img {
+    width: 80%;
+    height: 60%;
+}
+.column-both .container {
+    margin-top: 0px;
+}
+.column-both .container .col70 {
+    display: flex;
+    width: 70%;
+}
+.column-both .col-md-4 {
+    width: 250px;
+    height: 250px;
+}
+.column-both .col-md-4 .top{
+    background-position: center;
+    background-size: cover;
+    padding: 4.5em 0;
+    height: 250px;
+}
+.column-both .col-md-4 .anh-khoa {
+    background-position: center;
+    background-size: cover;
+    padding-top: 4.5em;
+}
+.column-both .col-md-4 .photo {
+    position: relative;
+}
+.top .photo .class1 {
+    background-color: transparent;
+    width: 100%;
+    height: 180px;
+}
+.top .photo .class2 {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(61, 58, 58, 0.466);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    top: 55px;
+    left: 0;
+}
+.top .photo:hover .class2 {
+    opacity: 1;
+}
+.top .photo .class3 a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.top .photo:hover a {
+    opacity: 1;
+    font-size: 25px;
+}
+.top .text a {
+    text-decoration: none;
+}
+.column-both .bottom {
+    height: 250px;
+    flex-wrap: wrap;
+
+}
+.column-both .col-md-4 .bottom{
+    background-position: center;
+    background-size: cover;
+    padding: 4.5em 0;
+    height: 250px;
+}
+.column-both .bottom .photo {
+    position: relative;
+}
+.bottom .photo .class1 {
+    background-color: transparent;
+    width: 100%;
+    height: 180px;
+}
+.bottom .photo .class2 {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(61, 58, 58, 0.466);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    top: 55px;
+    left: 0;
+}
+.bottom .photo:hover .class2 {
+    opacity: 1;
+}
+.bottom .photo .class3 a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bottom .photo:hover a {
+    opacity: 1;
+    font-size: 25px;
+}
+.bottom .text a {
+    text-decoration: none;
+}
+.col-md-4 .text-anhkhoa {
+    text-decoration: none;
+    margin-top: 20px;
+}
+.col-md-4 .text-anhkhoa a {
+    text-decoration: none;
+}
+.bottom .photo .class3 .nghiencuu {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bottom .photo:hover .nghiencuu {
+    opacity: 1;
+    font-size: 20px;
+}
+.top .photo .class3 .giangvien {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.top .photo:hover .giangvien {
+    opacity: 1;
+    font-size: 25px;
+}
+.bottom .photo .class3 .daotao {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 70px;
+    left: 65px;
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bottom .photo:hover .daotao {
+    opacity: 1;
+    font-size: 25px;
+}
+/* ------ end body------*/
+
+
+/* ------ footer ------*/
+.footer {
+    width: 100%;
+    margin-top: 380px;
+    background-color:rgb(4, 67, 122);
+}
+.footer .container {}
+.container .footer-top {
+    display: flex;
+    padding-top: 50px;
+}
+.footer-top .col-md-3 {
+    margin: 5px;
+    padding: 0;
+}
+.footer .footer-top .col-md-3 ul {
+    width: 100%;
+    border-right: gray solid 0.3px;
+}
+.footer-top .col-md-3 ul li {
+    list-style-type: none;
+}
+.footer-top .col-md-3 ul li a {
+    text-decoration: none;
+    font-style: none;
+    font-size: 13px;
+    color: white;
+}
+.footer-top .col-md-3 ul li:hover a {
+    color: rgb(250, 106, 70);
+}
+.footer .footer-bot {
+    display: flex;
+}
+.footer-bot .right {
+    margin-top: 5px;
+}
+.footer-bot .right span {
+    color: white;
+    font-size: 13px;
+}
+.footer-bot .right p {
+    color: white;
+    font-size: 13px;
+}
+.footer-bot .right a {
+    color: white;
+    text-decoration: none;
+}
+.footer-bot .right a:hover {
+    color: rgb(250, 106, 70);
+} 
+/* ------ end footer------*/
