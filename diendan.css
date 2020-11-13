@@ -10,9 +10,6 @@ body span {
     top: 0;
     background-color: rgb(5, 5, 5);
 }
-.banner-head .community {
-    margin-left: 210px;
-}
 .banner-head a {
     color: white;
     text-decoration: none;

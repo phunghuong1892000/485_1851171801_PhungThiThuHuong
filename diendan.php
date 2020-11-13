@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +12,12 @@
 </head>
 <body>
     <div class="banner-head">
+        <div class="container">
         <a class="community" href="news.html">Community</a>
-        <a href="news.html">Log in</a>
-        <a href="news.html">Register</a>
+        <a href="login.php">Log in</a>
+        <a href="register.php">Register</a>
+        </div>
     </div>
-
     <div class="container">
         <!-- phần đầu -->
         <div class="header">
@@ -24,50 +26,54 @@
                 
             </div>
             <div class="header-news">
-                <a href="news.html">NEWS...</a>
+                <a href="http://cse.tlu.edu.vn/tin-tuc-thong-bao">NEWS...</a>
                 <span>ElkArte - Justalled!</span>
             </div>
         </div>
-
         <!-- phần thân -->
         <div class="body">
             <div class="home">
-                <a href="news.html"><i class="fas fa-home"></i></a>
+                <a href="trangchu.php"><i class="fas fa-home"></i></a>
             </div>
-
             <!-- form 1-->
             <div class="title-1">
                 <div class="title">
                     <h5>1. CSE Forum</h5>
                 </div>
-
                 <div class="col-md-12">
                     <div class="col-md-6">
-                        <a href="news.html"><i class="far fa-comment"></i> Sự kiện CSE Forum</a>
+                        <a href="forum.php"><i class="far fa-comment"></i> Sự kiện CSE Forum</a>
                     </div>
                     <div class="col-md-2">
-                        <span>1 Ports<br>1 Topics</span>
+                        <span>
+                            <?php
+                            require_once"config.php";
+                            $numbers=port();
+                            foreach($numbers as $number)
+                            {
+                                $port=$number[0];
+                            }
+                            echo "$port Ports"; ?>    
+                        </span>
                     </div>
                     <div class="col-md-4">
-                        <a href="news.html">Chào mừng đến với Diễn...</a>
+                        <a href="news.php">Chào mừng đến với Diễn...</a>
                         <span>by Ban Quản trị</span> <br>
                         <b>Last post:</b> <span>September 15, 2020, 12:17 am</span>
                     </div>
                 </div>
-
                 <div class="col-md-12">    
                     <div class="col-md-6">
-                        <a href="news.html"><i class="far fa-comment"></i> Góp ý, kiến nghị cho CSE Forum</a>
+                        <a href="forum.html"><i class="far fa-comment"></i> Góp ý, kiến nghị cho CSE Forum</a>
                     </div>
                     <div class="col-md-2">
                         <span>0 Ports <br>0 Topics</span>
                     </div>
                     <div class="col-md-4"></div>
                 </div>
-
                 <div class="col-md-12">
                     <div class="col-md-6">
-                        <a href="news.html"><i class="far fa-comment"></i> Phòng truyền thông CSE Forum</a>
+                        <a href="forum.html"><i class="far fa-comment"></i> Phòng truyền thông CSE Forum</a>
                     </div>
                     <div class="col-md-2">
                         <span>0 Ports  <br>0 Topics</span>
@@ -105,7 +111,6 @@
                         <b>Last post:</b> <span>September 15, 2020, 12:59:10 am</span>
                     </div>
                 </div>
-
                 <div class="col-md-12">
                     <div class="col-md-6">
                         <a href="news.html"><i class="far fa-comment"></i> Tài liệu ôn thi</a>
@@ -121,7 +126,6 @@
                 <div class="title">
                     <h5>3. Hành lang lớp học</h5>
                 </div>
-
                 <div class="col-md-12">
                     <div class="col-md-6">
                         <a href="news.html"><i class="far fa-comment"></i> Trên giảng đường</a>
@@ -146,7 +150,6 @@
                 <div class="title">
                     <h5>4. Đào tào hướng nghiệp</h5>
                 </div>
-
                 <div class="col-md-12">
                     <div class="col-md-6">
                         <a href="news.html"><i class="far fa-comment"></i> Chia sẻ tài liệu bằng tiếng Việt</a>
@@ -180,7 +183,6 @@
                 <div class="title">
                     <h5>5. Các thế hệ sinh viên</h5>
                 </div>
-
                 <div class="col-md-12">
                     <div class="col-md-6">
                         <a href="news.html"><i class="far fa-comment"></i> K58</a>
@@ -229,11 +231,9 @@
                     <span>Latest Post: "<a href="news.html">Re: Điểm sàn tuyển sinh...
                     </a>" (September 15, 2020, 01: 01:58 am ) - <a href="news.html">View all recent posts.</a></span>
                 </div>
-
                 <div class="col-md-12 col-end">
                     <span><i class="fas fa-chalkboard-teacher"></i> Online now: 0 User, 1 Guest </span>
                 </div>
-
                 <div class="col-md-12 two-icon">
                     <span><i class="far fa-comment"></i> No new Posts</span>
                     <span><i class="fas fa-video"></i> Redirect Board</span>
@@ -241,7 +241,6 @@
             </div>
         </div>
     </div>
-
     <!-- phần cuối -->
     <div class="footer">
             <span class="col-md-8">Powered by ElkArte 1.1.6 | Credits</span>

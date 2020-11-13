@@ -1,9 +1,16 @@
+<?php
+session_start();
+if(!isset($_SESSION['name']))
+{
+    header("location:login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
@@ -32,21 +39,32 @@
                     <input type="submit" value="Tìm" id="search" class="search-button" src="http://cse.tlu.edu.vn/chi-tiet/s">
                   </div>
             </div>
+
+            <?php
+            echo 'Xin chào, ';
+            echo $_SESSION['name'];
+            if(isset($_POST['logout']))
+            {
+                unset($_SESSION['name']);
+                header("Location:login.php");
+            }
+            ?>
+            <form method="POST">
+                <input type="submit" value="Đăng xuất" name="logout"> 
+            </form>
+
         </div>
     </div>
-
     <!-- phần đầu -->
     <div class="header">
         <div class="container">
             <div class="header-logo">
                 <a href="http://cse.tlu.edu.vn"> <img src="picture/logo.jpg" alt=""></a>
             </div>
-
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -136,14 +154,13 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="http://cse.tlu.edu.vn/lien-he">Liên hệ</a>
+                        <a class="nav-link" href="diendan.php">Diễn đàn</a>
                       </li>
                   </ul>
                 </div>
               </nav>
         </div>
     </div>
-
         <!-- phần thân -->
     <div class="body">
             <div class="container">
@@ -226,7 +243,6 @@
                     <div id="fb-root"></div>
                     <script async defer crossorigin="anonymous"
                     src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="WzjxHNzo"></script>
-
                     <!-- Your like button code -->
                     <div class="fb-page" data-href="https://www.facebook.com/cse.tlu.edu.vn" 
                     data-tabs="" data-width="" data-height="" data-small-header="false" 
@@ -237,7 +253,6 @@
                     </div>
                 </div>
             </div>
-
         <div class="col-md-12 column-both">
             <div class="container">
                 <div class="col70 col-md-8 col-sm-10 col-xs-12">
@@ -273,7 +288,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-4 col-sm-12 col-12" >
                         <div class="top">
                             <div class="photo">
@@ -306,7 +320,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-4 col-sm-12 col-12">
                         <div class="anh-khoa">
                             <a href="https://www.facebook.com/pg/cse.tlu.edu.vn/photos/?ref=page_internal"> 

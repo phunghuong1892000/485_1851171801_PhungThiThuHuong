@@ -1,0 +1,50 @@
+* {
+    margin: auto;
+    padding: auto;
+
+}
+.section  {
+    min-height: 700px;
+    background: rgba(238, 157, 120, 0.726);
+    display: flex;
+}
+.form-backround {
+    background: salmon;
+    margin-top: 120px;
+    margin-bottom: 200px;
+    padding-top: 10px;
+} 
+.form-backround h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-group {
+    display: flex;
+}
+label {
+    font-size: 15px;
+}
+.form-control {
+    width: 60%;
+}
+.btn-login {
+    padding: 12px 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    border: none;
+    outline: none;
+    display: table;
+    cursor: pointer;
+    margin: 10px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-login:hover {
+    background-color: rgb(140, 245, 114);
+}
+form > p {
+    text-align: center;
+}
+form > p > a {
+    color: white;
+}
